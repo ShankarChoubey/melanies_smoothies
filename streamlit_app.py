@@ -33,7 +33,7 @@ if ingredients_list:
 
    # st.write(my_insert_stmt)
    #st.stop()
-       time_to_start = st.button('Submit Order')
-       if time_to_start:
-         session.sql(my_insert_stmt).collect()
-         st.success('Your Smoothie is ordered, ' + name_on_order + '!', icon="✅")
+        time_to_start = st.button('Submit Order')
+        if time_to_start:
+            session.sql(my_insert_stmt).collect()
+            st.success('Your Smoothie is ordered, ' + name_on_order + '!', icon="✅")
